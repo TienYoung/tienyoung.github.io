@@ -1,30 +1,35 @@
 @inject HttpClient Http
 
-<div class="bento-grid">
-    <div class="bento-box">
-        @* <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-        <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-        </NavLink> *@
-        <h1>About Me</h1>
-        My name is Tian Yang.
+<div class="row g-4">
+    <div class="col-md-8">
+        <div class="bento-item bento-tall bg-primary">
+            @* <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink> *@
+            <h1>About Me</h1>
+            My name is Tian Yang.
+        </div>
     </div>
-    <div class="bento-box">
-        <h1>Counter</h1>
+    <div class="col-md-4">
+        <div class="bento-item bg-warning text-dark">
+            <h1>Counter</h1>
 
-        <p role="status">Current count: @currentCount</p>
+            <p role="status">Current count: @currentCount</p>
 
-        <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+            <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-        @code {
-            private int currentCount = 0;
+            @code {
+                private int currentCount = 0;
 
-            private void IncrementCount()
-            {
-                currentCount++;
+                private void IncrementCount()
+                {
+                    currentCount++;
+                }
             }
-        }
+        </div>
     </div>
-    <div class="bento-box">
+    <divc class="col-md-4">
+        <div class="bento-item bg-info text-dark">
         <h1>Weather</h1>
 
         <p>This component demonstrates fetching data from the server.</p>
@@ -79,10 +84,13 @@
         }
 
     </div>
-    <div class="bento-box">
-        @*         <NavLink class="nav-link" href="bloglinks">
-        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> BlogLinks
-        </NavLink> *@
-        <tienyoung.github.io.Pages.BlogLinks />
+    </divc>
+    <div class="col-md-4">
+        <div class="bento-item bg-secondary">
+            @*         <NavLink class="nav-link" href="bloglinks">
+            <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> BlogLinks
+            </NavLink> *@
+            <tienyoung.github.io.Pages.BlogLinks />
+        </div>
     </div>
 </div>

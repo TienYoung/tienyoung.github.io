@@ -1,4 +1,4 @@
-﻿.bento-grid {
+﻿/*.bento-grid {
     background-color: #f5f5f7;
     color: white;
     padding: 1rem;
@@ -17,9 +17,9 @@
         color: #4446bf;
         background-color: white;
         border-radius: 3rem;
-        padding: 5rem;
+        padding: 5rem;*/
         /*box-shadow: 7px 7px 12px rgb(0, 0, 0, .5), -7px -7px 12px rgb(255, 255, 255,.5);*/
-    }
+    /*}
 
 @media (max-width: 920px){
     .bento-grid {
@@ -29,4 +29,23 @@
             'box3'
             'box4';
     }
+}*/
+
+.bento-item {
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+    .bento-item:hover {
+        transform: scale(1.05);
+    }
+
+.bento-tall {
+    height: 410px;
 }
