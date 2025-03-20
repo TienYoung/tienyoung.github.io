@@ -1,16 +1,238 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+<div id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Tian Yang</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.webp" alt="profile" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Tian
+                    <span class="text-primary">Yang</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Ontario, Canada · (382) 885-2602 ·
+                    <a href="mailto:constantine.skyy@hotmail.com">constantine.sky@hotmail.com</a>
+                </div>
+                <p class="lead mb-5">
+                    Experienced Technical Artist transitioning to Software Engineering, with over 5 years in game
+                    development and VR technologies. Combines strong programming skills (C/C++, C#, HLSL) with
+                    expertise in graphics APIs(DX12, OpenGL) and game engines(UE, Unity). Currently enhancing 
+                    software engineering competencies. Seeks to leverage unique blend of artistic vision, extensive
+                    coding experience, and emerging engineering skills in an innovative Software Engineer role.
+                </p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/tienyoung/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/TienYoung"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://medium.com/%40TienYoung"><i class="fa-brands fa-medium"></i></a>
+                    <a class="social-icon" href="https://tienaska.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+                    <a class="social-icon" href="https://www.zhihu.com/people/AskaTien"><i class="fa-brands fa-zhihu"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Advanced Technical Art Engineer</h3>
+                        <div class="subheading mb-3"><a href="https://www.neteasegames.com/" target="_blank" rel="noopener noreferrer">NetEase Games</a></div>
+                        <ul>
+                            <li>Implemented and optimized advanced rendering techniques, including shell-based fur, strand-based hair, and PBR material systems,
+                                significantly enhancing visual fidelity and scene realism across multiple games.</li>
+                            <li>Resolved critical cross-platform rendering issues and developed engine-level tools to improve physics system accuracy and
+                                resource processing efficiency.</li>
+                            <li>Developed innovative art tools to boost efficiency: implemented LiveLink real-time connection between Substance Painter and
+                                Messiah engine, and material synchronization between Maya and Messiah engine, resolving preview and final effect consistency issues;
+                                created character modeling tools for 3dsMax and Blender supporting modular design; built a Perforce-based resource management system
+                                for automated asset handling.</li>
+                            <li>Designed and patented a UE5 real-time light layer rendering tool (CN117671124A), enabling parallel rendering of different light groups
+                                within the same frame, accelerating the rendering process and eliminating variances caused by randomness, thus improving rendering
+                                efficiency and consistency.</li>
+                            <li>Provided comprehensive support to the art team: optimized production workflows, established asset standards, and conducted technical
+                                training (e.g., PBR principles, Git and Perforce tutorials), elevating overall team efficiency and technical proficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">December 2020 - November 2023</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Technical Artist</h3>
+                        <div class="subheading mb-3"><a href="https://www.linkedin.com/company/poliq/" target="_blank" rel="noopener noreferrer">PoliQ</a></div>
+                        <ul>
+                            <li>Developed and optimized various visual effects based on URP, including iridescent shaders, PBR multi-layer blended clothing materials,
+                                and holographic post-processing effects supporting scene object stencil masks, enhancing the visual presentation of 2D characters and
+                                environments.</li>
+                            <li>Extended the URP pipeline to implement rendering features such as Per-Object Shadows, significantly improving scene shadow effects
+                                while maintaining mobile-friendliness, offering a more suitable solution for mobile applications compared to CSM.</li>
+                            <li>Optimized post-processing effects performance, reducing Bloom effect blit count by 40%, effectively improving the APP's performance on
+                                mid to low-end devices.</li>
+                            <li>Developed a state machine-based camera movement system, implementing recording and playback functionalities for camera movements,
+                                providing users with more sophisticated video creation tools.</li>
+                            <li>As the sole technical artist in the team, established art guidelines and provided multifaceted technical support to artists. 
+                                Led training on engine-related knowledge, including PBR workflow, texture applications, and rendering concepts such as depth sorting.
+                                Guided the team in using Git for version control, significantly enhancing team's technical proficiency and collaborative efficiency,
+                                optimizing art asset creation processes.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">November 2019 - November 2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Technical Artist</h3>
+                        <div class="subheading mb-3"><a href="http://www.onionvr.cn/index.html" target="_blank" rel="noopener noreferrer">Chendu Onion Technology CO.,LTD.</a></div>
+                        <ul>
+                            <li>Developed VR training software for flight attendants using UE4, implementing performance optimization strategies including Virtual Texture technology,
+                                significantly improving large-scale scene rendering efficiency and user experience.</li>
+                            <li>Provided crucial technical support to the art team in VR training project, resolving lighting errors in scene baking and vehicle reflection issues,
+                                enhancing visual fidelity and art asset production efficiency.</li>
+                            <li>Developed advanced visual effects for ground crew VR training software on Unity platform, including: Implemented dynamic four-season effects,
+                                combining grass-top color variation with VR binocular post-processing snow effects; Optimized forward-rendered decal techniques for enhanced scene detail;
+                                Created realistic fracture and injury effects using vertex deformation.</li>
+                            <li>Participated in the company's motion capture research project, collaborating with the hardware team to develop a companion software system.
+                                Implemented data acquisition from in-house hardware, BVH format animation file generation, and integration of skeletal binding functionality
+                                with Motion Builder, providing software support for motion capture technology research.</li>
+                            <li>Deeply involved in the in-house development of VR interaction devices, including data gloves and airport jetway control console. Responsible for developing
+                                accompanying UE4 plugins, implementing real-time gesture capture, rendering, and specialized input integration, successfully applied in productized VR simulation
+                                training systems.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">June 2018 - November 2019</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Software Developer Intern</h3>
+                        <div class="subheading mb-3"><a href="http://www.cddcjt.cn/" target="_blank" rel="noopener noreferrer">Chengdu Dacheng Juntu Technology Co., LTD.</a></div>
+                        <ul>
+                            <li>Studied C# and implemented an internal IM tool using Socket.</li>
+                            <li>Acquired foundational knowledge in GIS development and learned methods for obtaining and applying DEM data</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">July 2016 - August 2016</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Conestoga College</h3>
+                        <div class="subheading mb-3">Advanced Diploma</div>
+                        <div>CSoftware Engineering Technology</div>
+                        <p>GPA: 3.73</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">January 2024 - Present</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Sichuan Vocational and Technical College of Communications</h3>
+                        <div class="subheading mb-3">Associate's Degress</div>
+                        <div>Traffic Safety and Intelligent Control</div>
+                        <p>GPA: 2.41</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2015 - July 2018</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fa-brands fa-git"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-unity"></i></li>
+@*                     <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-less"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-npm"></i></li> *@
+                </ul>
+                <div class="subheading mb-3">Workflow</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Adheres to Test-Driven Development (TDD) for robust and maintainable code
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Emphasizes modular and maintainable code design, employing object-oriented programming (OOP) patterns and best practices.
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Efficiently integrates development tools such as Git, Perforce, and CI/CD automation scripts to ensure smooth collaboration.
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Experienced in deploying cloud-based infrastructure (AWS) and automating deployment pipelines.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>I am passionate about game development, especially in the areas of graphics rendering and real-time visual effects,
+                    and I enjoy exploring various computer technologies. Embedded systems development particularly captures my interest,
+                    as I love working close to hardware and understanding system-level integration. I'm always enthusiastic about
+                    learning new programming languages and technologies, and I'm currently exploring Rust.</p>
+                <p class="mb-0">Outside of tech, I enjoy playing soccer, cycling, and gaming, which help me relax and recharge.</p>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Patents</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-award text-warning"></i></span>
+                        Art Craftsmanship Award - NetEase Interactive Entertainment Group December 2022
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-certificate text-info"></i></span>
+                        A Rendering Method for Lighting Effects (CN117671124A) - October 2023
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </div>
+
+@inject IJSRuntime JS
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("initializeBootstrap");
+    }
+}
